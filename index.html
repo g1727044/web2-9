@@ -6,8 +6,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       
-      $("#buttonS").on("click", function(){
-        $("#pS").slideToggle();
+      $(function(){
+        $("#buttonS").on("click", function(){
+          $("#pS").slideToggle();
+        });
       });
       
       $(function(){
@@ -20,14 +22,7 @@
   </head>
   <body>
     <button id="buttonS">表示・非表示（スライド）</button>
-    <div id="pS">
-      てすと。
-      あああああ
-      いいいいい
-      ううううう
-      えええええ
-      おおおおお。
-    </div>
+    <div id="pS">あああああ いいいいい ううううう えええええ おおおおお</div>
     
     <button id="toggle">切り替え</button>
     <div id="target">表示・非表示される要素</div>
