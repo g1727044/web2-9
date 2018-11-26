@@ -5,8 +5,9 @@
     <title>web2-9の課題</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
-      $("button").click(function(){
-        $("p").slideToggle();
+      
+      $("#buttonS").on("click", function(){
+        $("#pS").slideToggle();
       });
       
       $(function(){
@@ -18,15 +19,15 @@
     </script>
   </head>
   <body>
-    <button>表示・非表示（スライド）</button>
-    <p>
+    <button id="buttonS">表示・非表示（スライド）</button>
+    <div id="pS">
       てすと。
       あああああ
       いいいいい
       ううううう
       えええええ
       おおおおお。
-    </p>
+    </div>
     
     <button id="toggle">切り替え</button>
     <div id="target">表示・非表示される要素</div>
